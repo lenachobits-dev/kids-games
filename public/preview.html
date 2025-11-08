@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kids Games — превью</title>
+  <!-- Tailwind через CDN, чтобы не собирать проект -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white text-gray-900 antialiased">
+  <header class="border-b">
+    <div class="container mx-auto py-4 font-medium">Kids Games</div>
+  </header>
+
+  <main class="container mx-auto py-6">
+    <h1 class="text-2xl font-semibold mb-4">Каталог игр (демо)</h1>
+
+    <!-- Пример двух карточек как в твоём макете -->
+    <div class="grid gap-4 sm:grid-cols-2 print:grid-cols-2">
+      <article class="border rounded-xl p-4">
+        <h2 class="font-semibold">Снежный снаряд</h2>
+        <p class="text-sm text-gray-600">Возраст: 6–12 · Игроков: 4–14 · Сложность: легко</p>
+        <p class="mt-2 text-sm">Команды бросают «снежки» в ведро. Побеждает большее число попаданий.</p>
+      </article>
+
+      <article class="border rounded-xl p-4">
+        <h2 class="font-semibold">Шпионское слово</h2>
+        <p class="text-sm text-gray-600">Возраст: 7–12 · Игроков: 4–10 · Сложность: средне</p>
+        <p class="mt-2 text-sm">Команды собирают подсказки и отгадывают кодовое слово, общаясь шёпотом.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="border-t">
+    <div class="container mx-auto py-4 text-sm text-gray-500">
+      © <span id="y"></span> Kids Games — без регистрации и рекламы
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
