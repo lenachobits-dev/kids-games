@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Печать: 2 карточки на лист (на будущее) */
+@media print {
+  header, footer, nav { display: none !important; }
+  main { padding: 0 !important; }
+}
