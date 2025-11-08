@@ -19,6 +19,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             © {new Date().getFullYear()} Kids Games — без регистрации и рекламы
           </div>
         </footer>
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  });
+}
+`,
+  }}
+/>
+
       </body>
     </html>
   );
